@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="home.html">HOME</a>
+        <a class="active" href="index.html">ADD/REMOVE</a>
+        <a href="upload.html">UPLOAD SDF</a>
+        <a href="display.html">SELECT AND DISPLAY</a>
+    </nav>
+
+    <h1 class="title">Add Element</h1>
+    <form action="/elementAdd.html" method="post">
+        <div class="container">
+            <label>Element Number:</label>
+            <input type="text" id="ElementNumber" class="input-box" />
+            <br><br>
+            <label>Element Code:</label>
+            <input type="text" id="ElementCode" class="input-box" />
+            <br><br>
+            <label>Element Name:</label>
+            <input type="text" id="ElementName" class="input-box" />
+            <br><br>
+            <label>Colour 1:</label>
+            <input type="color" id="colour1" value="#A020F0" />
+            <br><br>
+            <label>Colour 2:</label>
+            <input type="color" id="colour2" value="#ADD8E6" />
+            <br><br>
+            <label>Colour 3:</label>
+            <input type="color" id="colour3" value="#90ee90" />
+            <br><br>
+            <label>Radius:</label>
+            <input type="text" id="radius" class="input-box" />
+            <br><br>
+            <button class="button button1" id="button1">Add Element</button>
+    </form>
+    </div>
+    <form action="/elementRemove.html" method="post">
+        <h1 class="title">Remove Element</h1>
+        <div class="container">
+            <label>Element Name:</label>
+            <input type="text" id="remove" class="input-box" />
+            <br><br>
+            <button class="button button2" id="button2">Delete</button>
+    </form>
+    </div>
+
+</html>

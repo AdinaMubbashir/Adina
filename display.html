@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="home.html">HOME</a>
+    <a href="index.html">ADD/REMOVE</a>
+    <a href="upload.html">UPLOAD SDF</a>
+    <a class="active" href="display.html">SELECT AND DISPLAY</a>
+  </nav>
+
+  <h1 class="title">SELECT MOLECULE FROM LIST</h1>
+  <div class="container">
+    <h1>Molecule Selection</h1>
+    <p>If a molecule has been uploaded, the name will pop up and you can click to view it's structure.</p>
+  </div>
+  <br> <br>
+  <div id="allMolList"></div>
+
+  <br> <br>
+
+  <div>
+
+    <br>
+
+  </div>
+
+  <div id="displayimg" class="container"></div>
+  <div id="rotbutton">
+    <button id="rotate-x" class="rotate-btn" data-axis="x">Rotate X</button>
+    <button id="rotate-y" class="rotate-btn" data-axis="y">Rotate Y</button>
+    <button id="rotate-z" class="rotate-btn" data-axis="z">Rotate Z</button>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="home.html">HOME</a>
+    <a href="index.html">ADD/REMOVE</a>
+    <a class="active" href="upload.html">UPLOAD SDF</a>
+    <a href="display.html">SELECT AND DISPLAY</a>
+  </nav>
+
+  <h2 class="title">Upload SDF</h2>
+  <div class="container">
+    <p>Click the button to upload a SDF. After uploading, please add a name!</p>
+    <form id="passForm" action="fileUpload" enctype="multipart/form-data" method="post">
+      <br><br>
+      <input type="file" id="fileVersion" name="filename" />
+      <br><br>
+      <label class="container">Molecule Name: </label>
+      <br>
+      <input type="text" id="molN" class="input-box">
+      <br><br>
+    </form>
+  </div>
+  <div class="container">
+    <button class="button button3" id="button4">Upload</button>
+  </div>
+</body>
+
+</html>
